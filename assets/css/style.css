@@ -1,0 +1,7 @@
+/* sets background to orange color */
+body{background: orange;
+}
+
+/* sets font to a larger size of 25px so it is easier to read all rows */
+p{font-size: 25px;
+}
