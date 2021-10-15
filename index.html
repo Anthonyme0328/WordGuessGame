@@ -6,6 +6,9 @@
     <title>ameGames</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     
 </head>
 <body>
@@ -14,7 +17,9 @@
     <h1>The Psychic Game!</h1>
 
 <!-- general instructions  -->
-    <p>Guess what I'm thinking of, press a random button and try to match me</p>
+    <p>Guess what letter I'm thinking of</p>
+    <p>Press any letter on the keyboard to make a guess</p>
+    <p>I will record your guesses below, Good Luck!!</p>
 
 <!-- win section -->
     <p>WINS:<span id= "userWins">0</span></p>
@@ -27,6 +32,14 @@
 
 <!-- letters you have guessed displayed next to eachother  -->
     <p>Your guesses so far:<span id= "userPress">nothing</span></p>
+
+    <div class="material-icons-outlined mark1">
+        <img src="./assets/images/help_black.svg">
+    </div>
+
+    <div class="material-icons-outlined mark2">
+        <img src="./assets/images/help_black.svg">
+    </div>
 
 <!-- linked javascript file in assests folder  -->
 <script src="assets/javascript/game.js"></script>

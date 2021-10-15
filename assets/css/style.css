@@ -1,7 +1,60 @@
 /* sets background to orange color */
-body{background: orange;
+body{
+  background: linear-gradient(yellow, greenyellow, lightgreen, greenyellow, yellow)
 }
 
 /* sets font to a larger size of 25px so it is easier to read all rows */
-p{font-size: 25px;
+p, h1{
+  font-size: 25px;
+  text-align: center;
+  font-family: 'Pacifico';
+}
+
+.mark1 {
+  width: 0px;
+  height: 0px;
+  position: relative;
+  animation-name: qmark;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;  
+}
+
+@keyframes qmark {
+  0%   { left:1%; top:0px;}
+  10%  { left:10%; top:0px;}
+  20%  { left:20%; top:0px;}
+  30%  { left:30%; top:0px;}
+  40%  { left:40%; top:0px;}
+  50%  { left:50%; top:0px;}
+  60%  { left:60%; top:0px;}
+  70%  { left:70%; top:0px;}
+  80%  { left:80%; top:0px;}
+  90%  { left:90%; top:0px;}
+  100% { left:100%; top:0px;}
+}
+
+.mark2 {
+  width: 0px;
+  height: 0px;
+  float: right;
+  position: relative;
+  animation-name: qmark2;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;  
+}
+
+@keyframes qmark2 {
+  0%   { right:1%; top:0px;}
+  10%  { right:10%; top:0px;}
+  20%  { right:20%; top:0px;}
+  30%  { right:30%; top:0px;}
+  40%  { right:40%; top:0px;}
+  50%  { right:50%; top:0px;}
+  60%  { right:60%; top:0px;}
+  70%  { right:70%; top:0px;}
+  80%  { right:80%; top:0px;}
+  90%  { right:90%; top:0px;}
+  100% { right:100%; top:0px;}
 }

@@ -1,15 +1,15 @@
-var computerChoices = ["a" , "b" , "c" , "d" , "e" , "f" , "g" , "h" , "i" , "j" , "k" , "l" , "m" , "n" , "o" , "p" , "q" , "r" , "s" , "t" , "u" , "v" , "w" , "x" , "y" , "z" ];
+let computerChoices = ["a" , "b" , "c" , "d" , "e" , "f" , "g" , "h" , "i" , "j" , "k" , "l" , "m" , "n" , "o" , "p" , "q" , "r" , "s" , "t" , "u" , "v" , "w" , "x" , "y" , "z" ];
 
 
 
 
-var wins = 0;
-var losses = 0;
-var guessesRem = 10;
-var clicked = [];
+let wins = 0;
+let losses = 0;
+let guessesRem = 10;
+let clicked = [];
 
 function computerGuess() {
-    var chosenLetter = '';
+    let chosenLetter = '';
     chosenLetter = computerChoices[Math.floor(Math.random() * computerChoices.length)];
     return chosenLetter
 }
@@ -18,11 +18,11 @@ function diffToTen(num){
   return 10 - num;
 }
 
-var computerGuessvar = computerGuess() ;
+let computerGuessvar = computerGuess() ;
 console.log
 
 document.onkeyup = function(event) {
-    var userGuess = event.key;
+    let userGuess = event.key;
     clicked.push(userGuess);
     document.getElementById("userPress").textContent = clicked;
     winOrLoosefun(userGuess);
